@@ -26,35 +26,13 @@ python
 from tinytroupe.agent import TinyPerson
 
 bhavna = TinyPerson("Bhavna")
-bhavna.define("age", 26)
+bhavna.define("age", 25)
 bhavna.define("nationality", "Indian")
-bhavna.define("occupation", "Data Science student at Pace University")
-bhavna.define("skills", ["Python", "Data Science", "Machine Learning", "SQL", "Deep Learning", "JAVA"])
-bhavna.define("quirks", "Uses AI Jokes")
+bhavna.define("occupation", "MS. in Data Science student at Pace University")
+
 ```
 
-## 5. Asking a question to 1st persona
-
-```python
-bhavna.listen_and_act("Tell me about your life.")
-```
-
-**Output:**
-```
-USER --> Bhavna: [CONVERSATION] 
-          > Tell me about your life.
-Bhavna acts: [THINK] 
-         > I need to think about how to describe my life. I should mention my studies, interests,
-         > and maybe a bit about my personality.
-Bhavna acts: [TALK] 
-         > Well, I'm currently a Data Science student at Pace University. I'm 26 years old and I
-         > have a strong interest in Python, Machine Learning, and Deep Learning. I enjoy working
-         > with data and finding insights that can help solve problems. I also have a quirky side
-         > where I like to use AI jokes!
-Bhavna acts: [DONE] 
-```
-
-## 6. Creating 2nd Persona
+## 5. Creating 2nd Persona
 
 ```python
 from tinytroupe.agent import TinyPerson
@@ -66,7 +44,7 @@ yiqiao.define("occupation", "He is a professor at Pace university.")
 yiqiao.define("skills", ["Python", "Data Science", "Machine Learning", "SQL", "Deep Learning", "Computer Vision", "Neural Networks", "Cloud Computing", "NLP (Natural Language Processing)"])
 ```
 
-## 7. Observing a conversation between two personas
+## 6. Observing a conversation between two personas
 
 ```python
 from tinytroupe.environment import TinyWorld
@@ -164,7 +142,7 @@ Bhavna --> Yiqiao: [CONVERSATION]
 
 ---
 
-## 8. Turing Test Thoughts
+## 7. Turing Test Thoughts
 
 I think that this conversation between these two bots has passed the Turing Test.
 
